@@ -5,6 +5,3 @@ format: jb-book
 root: intro
 chapters:
 - file: Datasets
-- file: notebooks
-- file: markdown-notebooks
-- file: Test
