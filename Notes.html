@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Raw Counts for Aligned RNA-seq Reads &#8212; Lamba Lab Notebook</title>
+    <title>Notes &#8212; Lamba Lab Notebook</title>
   
   
   
@@ -57,11 +57,10 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'Datasets';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Notes';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Notes" href="Notes.html" />
-    <link rel="prev" title="Ryanne’s Coding Notebook" href="intro.html" />
+    <link rel="prev" title="Raw Counts for Aligned RNA-seq Reads" href="Datasets.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -174,8 +173,8 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Raw Counts for Aligned RNA-seq Reads</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Notes.html">Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Datasets.html">Raw Counts for Aligned RNA-seq Reads</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Notes</a></li>
 </ul>
 
     </div>
@@ -247,7 +246,7 @@
       
       
       
-      <li><a href="https://github.com/ryanne-m/Jupyter-Notebook/issues/new?title=Issue%20on%20page%20%2FDatasets.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/ryanne-m/Jupyter-Notebook/issues/new?title=Issue%20on%20page%20%2FNotes.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -277,7 +276,7 @@
       
       
       
-      <li><a href="_sources/Datasets.ipynb" target="_blank"
+      <li><a href="_sources/Notes.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -361,7 +360,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Raw Counts for Aligned RNA-seq Reads</h1>
+    <h1>Notes</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -371,7 +370,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#beat-aml-dataset">BEAT AML Dataset</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">09/30/2024</a></li>
 </ul>
             </nav>
         </div>
@@ -383,187 +382,17 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="raw-counts-for-aligned-rna-seq-reads">
-<h1>Raw Counts for Aligned RNA-seq Reads<a class="headerlink" href="#raw-counts-for-aligned-rna-seq-reads" title="Link to this heading">#</a></h1>
-<section id="beat-aml-dataset">
-<h2>BEAT AML Dataset<a class="headerlink" href="#beat-aml-dataset" title="Link to this heading">#</a></h2>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;csvFiles/BeatAML_RNASeq_rawcounts_2018_10_24.csv&quot;</span><span class="p">)</span>
-<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Gene</th>
-      <th>Symbol</th>
-      <th>Chr</th>
-      <th>Exon_Start</th>
-      <th>Exon_End</th>
-      <th>Strand</th>
-      <th>Length</th>
-      <th>GeneStart</th>
-      <th>GeneEnd</th>
-      <th>12-00023</th>
-      <th>...</th>
-      <th>17-00043</th>
-      <th>17-00044</th>
-      <th>17-00045</th>
-      <th>17-00046</th>
-      <th>17-00047</th>
-      <th>17-00049</th>
-      <th>17-00051</th>
-      <th>17-00052</th>
-      <th>17-00053</th>
-      <th>17-00055</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>ENSG00000000003</td>
-      <td>TSPAN6</td>
-      <td>X</td>
-      <td>99883667;99885756;99887482;99888402;99888928;9...</td>
-      <td>99884983;99885863;99887565;99888536;99889026;9...</td>
-      <td>-</td>
-      <td>2968</td>
-      <td>99883667</td>
-      <td>99894988</td>
-      <td>8</td>
-      <td>...</td>
-      <td>41</td>
-      <td>16</td>
-      <td>18</td>
-      <td>28</td>
-      <td>35</td>
-      <td>34</td>
-      <td>35</td>
-      <td>27</td>
-      <td>34</td>
-      <td>20</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>ENSG00000000005</td>
-      <td>TNMD</td>
-      <td>X</td>
-      <td>99839799;99840228;99848621;99849258;99852501;9...</td>
-      <td>99840063;99840359;99849032;99849359;99852654;9...</td>
-      <td>+</td>
-      <td>1610</td>
-      <td>99839799</td>
-      <td>99854882</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>ENSG00000000419</td>
-      <td>DPM1</td>
-      <td>20</td>
-      <td>49551404;49552685;49557402;49557642;49558568;4...</td>
-      <td>49551773;49552799;49557492;49557746;49558663;4...</td>
-      <td>-</td>
-      <td>1207</td>
-      <td>49551404</td>
-      <td>49575092</td>
-      <td>1080</td>
-      <td>...</td>
-      <td>1087</td>
-      <td>1208</td>
-      <td>1058</td>
-      <td>1297</td>
-      <td>1069</td>
-      <td>1163</td>
-      <td>1041</td>
-      <td>1366</td>
-      <td>1389</td>
-      <td>1198</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>ENSG00000000457</td>
-      <td>SCYL3</td>
-      <td>1</td>
-      <td>169818772;169823411;169824937;169828182;169831...</td>
-      <td>169822913;169824105;169825098;169828353;169831...</td>
-      <td>-</td>
-      <td>6876</td>
-      <td>169818772</td>
-      <td>169863408</td>
-      <td>701</td>
-      <td>...</td>
-      <td>881</td>
-      <td>990</td>
-      <td>927</td>
-      <td>1008</td>
-      <td>706</td>
-      <td>996</td>
-      <td>791</td>
-      <td>865</td>
-      <td>651</td>
-      <td>751</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>ENSG00000000460</td>
-      <td>C1orf112</td>
-      <td>1</td>
-      <td>169631245;169652610;169652897;169752952;169754...</td>
-      <td>169631761;169652766;169653073;169753069;169754...</td>
-      <td>+</td>
-      <td>6354</td>
-      <td>169631245</td>
-      <td>169823221</td>
-      <td>249</td>
-      <td>...</td>
-      <td>560</td>
-      <td>548</td>
-      <td>511</td>
-      <td>569</td>
-      <td>459</td>
-      <td>421</td>
-      <td>625</td>
-      <td>444</td>
-      <td>667</td>
-      <td>416</td>
-    </tr>
-  </tbody>
-</table>
-<p>5 rows × 503 columns</p>
-</div></div></div>
-</div>
+  <section class="tex2jax_ignore mathjax_ignore" id="notes">
+<h1>Notes<a class="headerlink" href="#notes" title="Link to this heading">#</a></h1>
+<section id="id1">
+<h2>09/30/2024<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<p>Spoke with Francisco and came up with a couple of possibilities to move ahead with the fusion/alternatively splice proteins project:</p>
+<ol class="arabic simple">
+<li><p>Talk to Dr. Timothy Shaw to learn about the pipeline and possibly obtain his dataset to make sure I work through it correctly, then use the pipeline on our own bam/fastq files</p></li>
+<li><p>Work together with Francisco who is looking at whole genome sequencing (WGS) data to validate his methylation findings- many of these were fusion proteins and I could get started on this right away while waiting for bam/fastq files</p></li>
+<li><p>Do our own RNA-seq on samples we already have to obtain the fastq files ourselves. Would be ideal if these samples also already had DNA sequencing</p></li>
+</ol>
+<p>Fastq files are ideal for finding these protein isoforms, however it seems like this files type is not available online, only bam. Bam could possibly be used since it gives you multiple chromosomal posibilities for fusion proteins. With fastq files we can work from the very beginning and reduce bias from platforms that only align the sequences with known isoforms.</p>
 </section>
 </section>
 
@@ -598,22 +427,13 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="intro.html"
+       href="Datasets.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Ryanne’s Coding Notebook</p>
+        <p class="prev-next-title">Raw Counts for Aligned RNA-seq Reads</p>
       </div>
-    </a>
-    <a class="right-next"
-       href="Notes.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Notes</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -631,7 +451,7 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#beat-aml-dataset">BEAT AML Dataset</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">09/30/2024</a></li>
 </ul>
   </nav></div>
 
